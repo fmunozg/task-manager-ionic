@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tasks"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nueva Tarea</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/settings">
+        <ion-icon name="settings-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="saveTask()">
+
+    <ion-item>
+      <ion-label position="stacked">Título *</ion-label>
+      <ion-input formControlName="title"></ion-input>
+    </ion-item>
+
+    <ion-text color="danger" *ngIf="form.get('title')?.touched && form.get('title')?.invalid">
+      El título es obligatorio
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="stacked">Descripción</ion-label>
+      <ion-textarea formControlName="description"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Fecha</ion-label>
+      <ion-datetime
+        presentation="date"
+        formControlName="date"
+        show-default-buttons="true">
+      </ion-datetime>
+
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="form.invalid">
+      Guardar
+    </ion-button>
+
+  </form>
+</ion-content>

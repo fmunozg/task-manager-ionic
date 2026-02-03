@@ -1,0 +1,32 @@
+:root {
+  --ion-color-primary: #3b82f6;
+  --ion-color-primary-rgb: 59, 130, 246;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3472d8;
+  --ion-color-primary-tint: #5b9bfa;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --ion-background-color: #121212;
+    --ion-text-color: #ffffff;
+
+  }
+}
+
+body.dark {
+  --ion-background-color: #121212;
+  --ion-text-color: #ffffff;
+
+  --ion-color-primary: #90CAF9;
+  --ion-color-primary-contrast: #000000;
+
+  --ion-color-step-850: #ffffff; 
+
+    ion-datetime {
+    --background: var(--ion-background-color);
+    --color: var(--ion-text-color);
+    }
+}
+

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Tareas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/settings">
+        <ion-icon name="settings-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="!loading">
+    <ion-item *ngFor="let task of tasks" [routerLink]="['/tasks', task.id]">
+      <ion-label>
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.completed ? 'Completada' : 'Pendiente' }}</p>
+      </ion-label>
+      <ion-icon slot="end" *ngIf="task.completed" name="checkmark-circle-outline" color="success"></ion-icon>
+      <ion-icon slot="end" *ngIf="!task.completed" name="warning-outline" color="warning"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/new-task']">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-spinner *ngIf="loading"></ion-spinner>
+</ion-content>
