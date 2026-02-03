@@ -12,54 +12,70 @@ Forma parte de una prueba técnica para evaluar el desarrollo frontend mobile, a
 - Node.js
 - Ionic CLI
 
-### Pasos
+### Pasos para ejecutar
 ```bash
 npm install
 ionic serve
+```
+
 📱 Funcionalidades
-Listado de tareas obtenidas desde API pública
 
-Vista de detalle de tarea
+- Listado de tareas obtenidas desde API pública
 
-Creación de nuevas tareas con validaciones
+- Vista de detalle de tarea
 
-Cambio de estado (completada / pendiente)
+- Creación de nuevas tareas con validaciones
 
-Persistencia local usando LocalStorage
+- Cambio de estado (completada / pendiente)
 
-Modo oscuro (Dark Mode)
+- Persistencia local usando LocalStorage
 
-Manejo de estados: loading, sin resultados y error
+- Modo oscuro (Dark Mode)
 
-Navegación entre vistas
+- Manejo de estados: loading, sin resultados y error
+
+- Navegación entre vistas
 
 🧠 Decisiones técnicas
-Ionic + Angular para desarrollo mobile híbrido
 
-Servicios para encapsular lógica de negocio
+- Ionic + Angular para desarrollo mobile híbrido
 
-Uso de Reactive Forms para validaciones
+- Servicios para encapsular lógica de negocio
 
-Persistencia local mediante LocalStorage
+- Uso de Reactive Forms para validaciones
 
-Arquitectura modular (pages, services, models)
+- Persistencia local mediante LocalStorage
 
-Dark Mode gestionado a nivel global
+- Arquitectura modular (pages, services, models)
 
-Uso de interfaces para tipado de datos
+- Dark Mode gestionado a nivel global
+
+- Uso de interfaces para tipado de datos
+
+- UI optimizada para experiencia mobile
+
 
 🧪 Testing
-Se incluye un test unitario básico para validar la lógica de negocio del servicio de tareas utilizando TestBed y HttpClientTestingModule.
+
+- Se incluye un test unitario básico para validar la lógica de negocio del servicio de tareas utilizando TestBed y HttpClientTestingModule.
 
 ⚠️ Limitaciones
-API pública sin persistencia real
 
-No sincronización avanzada offline/online
+- API pública sin persistencia real
+
+- No sincronización avanzada offline/online
 
 🔮 Mejoras futuras
-Sincronización con backend real
 
-Autenticación de usuarios
+- Sincronización con backend real
+
+- Autenticación de usuarios
+
+- Mayor cobertura de tests
+
+- Manejo avanzado de modo offline
+
+- Autenticación de usuarios
 
 Mayor cobertura de tests
 
