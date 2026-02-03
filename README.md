@@ -2,7 +2,7 @@
 # Prueba Técnica – Task Manager App
 
 Aplicación móvil híbrida desarrollada con **Ionic + Angular + TypeScript** que permite la gestión de tareas.
-Forma parte de una prueba técnica para evaluar el desarrollo frontend mobile, arquitectura y buenas prácticas.
+Forma parte de una prueba técnica para evaluar las tecnologías mencionadas.
 
 ---
 
