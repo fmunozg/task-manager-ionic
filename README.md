@@ -77,6 +77,6 @@ ionic serve
 
 - Autenticación de usuarios
 
-Mayor cobertura de tests
+- Mayor cobertura de tests
 
-Manejo avanzado de modo offline
+- Manejo avanzado de modo offline
